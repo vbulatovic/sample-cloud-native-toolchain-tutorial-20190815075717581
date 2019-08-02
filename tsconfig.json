@@ -21,9 +21,7 @@
     "paths": {
       "@shared/*": ["src/app/shared/*"],
       "@core/*": ["src/app/core/*"],
-      "@models/*": ["src/app/models/*"],
-      "@img/*": ["src/assets/*"],
-      "@style/*": ["src/assets/style/sass/*"]
+      "@models/*": ["src/app/models/*"]
     }
   },
   "angularCompilerOptions": {
