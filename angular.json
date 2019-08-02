@@ -32,8 +32,8 @@
               "node_modules/bootstrap/scss/bootstrap.scss"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/assets/styles"]
-            },
+              "includePaths": ["src/assets/style/sass/"]
+            }
           },
           "configurations": {
             "production": {
