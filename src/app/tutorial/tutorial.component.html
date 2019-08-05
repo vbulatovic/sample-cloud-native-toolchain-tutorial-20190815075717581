@@ -1,60 +1,7 @@
 <article  class="container-fluid" >
-    <div *ngFor="let tutorials of allTutorials" >
+    <div *ngFor="let tutorials of allTutorials | filter: search ">
             <app-tutorial-card [tutorial]='tutorials'>
 
-            </app-tutorial-card>
-            <!--<figure class="col-3 image">
-
-            </figure>
-
-            <div class="col-9 info">
-                
-                <h4 class="talkName">
-                        <span class="self-align-end float-right">{{tutorial.Level}}</span> {{tutorial.TalkName}} 
-                </h4>
-                <h5>
-                    {{tutorial.Date}} <span class="float-right">{{tutorial.Location}}</span>
-                </h5>
-                <h4>
-                    {{tutorial.Name}} {{tutorial.Surname}} 
-                </h4>
-                <p>
-                    {{tutorial.Position}}
-                </p>
-                <p>
-                    {{tutorial.Company}}
-                </p>
-            
-                <div class="expendLink">
-                    <a (click)="toggle()"   href="#">
-                            DETAILS
-                    </a>
-                    <p class="float-right">
-                        {{tutorial.Seats}} LEFT
-                    </p>
-                </div>
-            </div>
-            
-            <div *ngIf="show" class="col-12">
-                <div class="row">
-                    <p class="col-3 bg-grey text-right">
-                        BIOGRAPHY
-                    </p>
-                    <p class="col-9">
-                        {{tutorial.Bio}}
-                    </p>
-            
-                    <p class="col-3 bg-grey text-right">
-                            ABOUT LECTURE
-                    </p>
-                    <p class="col-9">
-                        {{tutorial.Abstract}}
-                    </p>
-                    <a href="" class="col-9 offset-3" title="APPLY" alt="APPLY">
-                        <button class="btn">APPLY</button>
-                    </a>
-                </div>
-            </div>-->
-                
+            </app-tutorial-card>                
     </div>
 </article>

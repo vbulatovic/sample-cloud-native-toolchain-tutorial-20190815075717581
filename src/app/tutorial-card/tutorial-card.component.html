@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" [ngClass]="{'show':checked}">
     <figure class="col-3 image">
 
     </figure>
@@ -21,7 +21,7 @@
         </p>
 
         <div class="expendLink">
-            <a (click)="toggle()"   href="#">
+            <a (click)="toggle()">
                     DETAILS
             </a>
             <p class="float-right">

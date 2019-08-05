@@ -7,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TutorialComponent implements OnInit {
 
-  
+  @Input() public search: string;
+
   @Input() public allTutorials: any;
   
   constructor( ) { }

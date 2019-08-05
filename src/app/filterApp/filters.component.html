@@ -1,12 +1,46 @@
 
-<section id="filters" class="container">
+<section  class="container-fluid filters">
     <div class="row">
-            <h4 class="col-12">
-                FILTER BY
-            </h4>
-            
-        <app-filter class="col-3"></app-filter>
+        <div class="col-12 searchBar">
+            <div class="container">
+                <h1 class="text-center">
+                    TECH <span>TUTORIALS</span>
+                </h1>
+                <input type="text" name="" id="" [(ngModel)]="searchText" placeholder="SEARCH TUTORIAL NAME">
+            </div>
+        </div>
+    </div>
+</section>
 
-        <app-tutorial  class="col-9" [allTutorials]='tutorials'></app-tutorial>
+<section  class="container filters">
+    <div class="row">
+        <h4 class="col-12">
+            FILTER BY
+        </h4>
+            
+        <aside class="col-3">
+            <p (click)="togle()">
+                <a >
+                    LEVEL
+                </a>
+            </p>
+            <ul *ngIf="show">
+                <li>
+                    <label for="" >
+                        <input type="checkbox"  (click)="toggleCheck('Intermediate')">
+                            Intermediate
+                    </label>
+                </li>
+                <li>
+                    <label for="" >
+                        <input type="checkbox" name="" id="" (click)="toggleCheck('advance')" >
+                            Advance
+                    </label>
+                </li>
+            </ul>
+        
+        </aside>
+
+        <app-tutorial  class="col-9" [search] = "searchText" [allTutorials]='tutorials' ></app-tutorial>
     </div>
 </section>

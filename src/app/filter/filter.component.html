@@ -1,87 +1,22 @@
 <aside >
-    <p>
-        <a (click)="togle()" href="#" >
-            TYPE 
+    <p (click)="togle()">
+        <a >
+            LEVEL
         </a>
     </p>
     <ul *ngIf="show">
         <li>
-            <input type="checkbox" name="" id="">
-        </li>
-        <li>
-            <input type="checkbox" name="" id="">
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
+            <label for="" >
+                <input type="radio"  value="intermediate" [(ngModel)]="value">
+                    Intermediate
+            </label>
+
+            <label for="" >
+                <input type="radio" name="" id="" value="Advance" [(ngModel)]="value2">
+                    Advance
+            </label>
         </li>
     </ul>
     
-    <p>
-        <a (click)="togle()" href="#" >        
-            TOPIC 
-        </a>
-    </p>
-    <ul *ngIf="show">
-        <li>
-            <input type="checkbox" name="" id="">
-        </li>
-        <li>
-            <input type="checkbox" name="" id="">
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-    </ul>
-    
-    <p>
-        <a data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
-            INDUSTRI 
-        </a>
-    </p>
-    <ul class="collapse" id="collapseExample3">
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-    </ul>
-
-    <p>
-        <a data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
-            TOOLS
-        </a>
-    </p>
-    <ul class="collapse" id="collapseExample4">
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-    </ul>
-
-    <p>
-        <a data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
-            LANGUAGE 
-        </a>
-    </p>
-    <ul class="collapse" id="collapseExample5">
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-        <li>
-            <input type="checkbox" name="" id="" >
-        </li>
-    </ul>
 
 </aside>

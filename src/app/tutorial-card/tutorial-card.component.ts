@@ -1,7 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-import{ TutorialComponent } from '../tutorial/tutorial.component'
-
 @Component({
   selector: 'app-tutorial-card',
   templateUrl: './tutorial-card.component.html',
@@ -16,7 +14,7 @@ export class TutorialCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.tutorial);
+  
   }
 
   toggle(){
