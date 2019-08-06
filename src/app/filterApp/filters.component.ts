@@ -12,7 +12,8 @@ export class FiltersComponent implements OnInit {
   private talk : {};
   public tutorials : [];
   show: boolean;
-  checked: boolean=false;
+  checkedBox : boolean=true;
+  
   
   constructor( private _tutorialsService: TutorialsService) { }
 
@@ -23,11 +24,5 @@ export class FiltersComponent implements OnInit {
 
   togle(){
     this.show = !this.show;
-  }
-
-  toggleCheck(a){
-    this.checked = !this.checked;
-    console.log(this.checked)
-    console.log(a);
   }
 }

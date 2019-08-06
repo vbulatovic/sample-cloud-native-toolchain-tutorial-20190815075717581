@@ -10,8 +10,8 @@ import { TutorialsService } from './additional/services/tutorials.service';
 import { TutorialComponent } from './tutorial/tutorial.component';
 import { FilterComponent } from './filter/filter.component';
 import { TutorialCardComponent } from './tutorial-card/tutorial-card.component';
-import { FilterPipe } from './filterApp/search-filter.pipe';
-import { CheckFilterPipe } from './filterApp/check-filter.pipe';
+import { FilterPipe } from './additional/pipes/search-filter.pipe';
+import { CheckPipe } from './additional/pipes/check.pipe';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { CheckFilterPipe } from './filterApp/check-filter.pipe';
     FilterComponent,
     TutorialCardComponent,
     FilterPipe,
-    CheckFilterPipe
+    CheckPipe
   ],
   imports: [
     FormsModule,

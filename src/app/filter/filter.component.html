@@ -7,14 +7,14 @@
     <ul *ngIf="show">
         <li>
             <label for="" >
-                <input type="radio"  value="intermediate" [(ngModel)]="value">
+                <input type="checkbox" ngModel [checked]='checkedBox' (change)='checkedBox = !checkedBox' >
                     Intermediate
             </label>
 
-            <label for="" >
+            <!--<label for="" >
                 <input type="radio" name="" id="" value="Advance" [(ngModel)]="value2">
                     Advance
-            </label>
+            </label>-->
         </li>
     </ul>
     

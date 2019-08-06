@@ -7,6 +7,12 @@ import { Component, OnInit, Input, Output} from '@angular/core';
 })
 export class FilterComponent implements OnInit {
 
+  public filters = {
+    level : {
+      advancce : true
+    }
+  }
+  
   public show:boolean = false;
   
   constructor() { }
@@ -17,6 +23,10 @@ export class FilterComponent implements OnInit {
 
   togle(){
     this.show = !this.show;
+  }
+
+  filterData(arg:any){
+    this.filters.level.advancce = !this.filters.level.advancce;
   }
   
 }

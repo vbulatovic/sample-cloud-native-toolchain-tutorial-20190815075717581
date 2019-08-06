@@ -25,22 +25,23 @@
                 </a>
             </p>
             <ul *ngIf="show">
+                
                 <li>
                     <label for="" >
-                        <input type="checkbox"  (click)="toggleCheck('Intermediate')">
+                        <input type="checkbox" ngModel [checked]='checkedBox' (change)='checkedBox = !checkedBox' >
                             Intermediate
                     </label>
                 </li>
-                <li>
+               <!-- <li>
                     <label for="" >
-                        <input type="checkbox" name="" id="" (click)="toggleCheck('advance')" >
+                        <input type="checkbox" name="" id=""  >
                             Advance
                     </label>
-                </li>
+                </li>-->
             </ul>
         
         </aside>
 
-        <app-tutorial  class="col-9" [search] = "searchText" [allTutorials]='tutorials' ></app-tutorial>
+        <app-tutorial  class="col-9" [search] = "searchText" [allTutorials]='tutorials' [checkBox] = 'checkedBox' ></app-tutorial>
     </div>
 </section>

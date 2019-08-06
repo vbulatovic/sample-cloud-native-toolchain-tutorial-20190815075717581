@@ -1,5 +1,5 @@
 <article  class="container-fluid" >
-    <div *ngFor="let tutorials of allTutorials | filter: search ">
+    <div *ngFor="let tutorials of allTutorials | filter: search | check: checkBox">
             <app-tutorial-card [tutorial]='tutorials'>
 
             </app-tutorial-card>                
